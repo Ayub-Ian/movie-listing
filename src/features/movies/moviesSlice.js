@@ -9,6 +9,7 @@ export function  fetchMovies() {
         `*[_type == 'movie']{
             _id,
             "poster": poster.asset->url,
+            title
         } `
       );
       dispatch({ type: "movies/moviesLoaded", payload: data })
