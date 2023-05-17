@@ -1,11 +1,14 @@
-import React from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MoviesList from "./features/MoviesList";
 
 function App() {
   return (
-    <React.Fragment>
-      <h1 className="tw-text-2xl tw-font-bold tw-text-red-500 tw-underline">Hello world!</h1>
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MoviesList />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
