@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MoviesList from "./features/MoviesList";
+import MoviesList from "./features/movies/MoviesList";
 
 function App() {
   return (
